@@ -23,14 +23,14 @@ When installing the Go extension for VSCode, I received the error:
 #### Solution
  1. Run `go env` to list the go environment variables.
  1. In `.zprofile`, `.bashrc`, `.bash_profile` or wherever else you source from, add:
-
+```
     # Set GOROOT and GOPATH
     export GOPATH=*your path to GOPATH*
     export GOROOT=*path to your go installation*
 
     # Add GOROOT and GOPATH to path
     export PATH=$PATH:$GOROOT/bin
-
+```
 1. Restarting VSCode and reinstalling worked for me.
 
 ## Sources
